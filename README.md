@@ -6,7 +6,7 @@ window.dom = {
         const container = document.createElement("template")
         container.innerHTML = string.trim();
         return container.content.firstChild
-    },
+    }, //template标签可以容纳其他各种标签
     after(node, node2) {
         console.log(node.nextSibling)
         node.parentNode.insertBefore(node2, node.nextSibling);
